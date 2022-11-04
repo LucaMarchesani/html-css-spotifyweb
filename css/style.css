@@ -12,25 +12,35 @@
 
 
 aside.navbar{
-    width: 200px;
-    height: calc(100vh - 100px);
+    width: 150px;
+    height: calc(100vh - 60px);
     background-color: blue;
 }
 
 div.top-main{
-    width: calc(100vw - 200px);
-    height: 90px;
+    width: calc(100vw - 150px);
+    height: 50px;
     background-color: red;
 }
 
 div.content-main{
-    width: calc(100vw - 200px);
-    height: calc(100vh - 190px);
+    width: calc(100vw - 150px);
+    height: calc(100vh - 110px);
     background-color: aqua;
+    justify-content: space-around;
 }
+
+div.square{
+    width: calc(100vw / 8);
+    height: calc(100vw / 8);
+    background-color: chartreuse;
+    margin-top: 1rem;
+}
+
+
 
 div.player{
     width: 100vw;
-    height: 100px;
+    height: 60px;
     background-color: blueviolet;
 }
