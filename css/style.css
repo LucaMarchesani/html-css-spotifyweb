@@ -10,6 +10,10 @@
     display: flex;
 }
 
+body{
+    min-width: 500px;
+}
+
 header{
     width: 60px;
     height: calc(100vh - 100px);
