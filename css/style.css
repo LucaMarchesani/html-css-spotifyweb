@@ -10,37 +10,138 @@
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
 
-aside.navbar{
-    width: 150px;
-    height: calc(100vh - 60px);
-    background-color: blue;
+header{
+    width: 60px;
+    height: calc(100vh - 100px);
+    background-color: teal;
+}
+
+main{
+    width: calc(100% - 60px);
+    height: calc(100vh - 100px);
+    background-color: violet;
 }
 
 div.top-main{
-    width: calc(100vw - 150px);
-    height: 50px;
-    background-color: red;
+    height: 100px;
+    background-color: tomato;
 }
 
-div.content-main{
-    width: calc(100vw - 150px);
-    height: calc(100vh - 110px);
-    background-color: aqua;
-    justify-content: space-around;
+div.main-content{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding-top: 8rem;
+    background-color: springgreen;
+    overflow-y: scroll;
 }
 
-div.square{
-    width: calc(100vw / 8);
-    height: calc(100vw / 8);
-    background-color: chartreuse;
-    margin-top: 1rem;
+section.albums{
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+div.album{
+    width: calc(50vw - 4rem);
+    height: calc(50vw - 4rem);
+    margin: 1rem .4rem;
+    background-color: yellow;
+}
+
+section.recommended{
+    padding: 5rem 1rem;
+}
+
+section.popular{
+    padding: 0 1rem;
+}
+
+div.artist{
+    width: calc(50vw - 4rem);
+    height: calc(50vw - 4rem);
+    margin: 1rem .4rem;
+    background-color: violet;
+    border-radius: 50%;
+}
+
+footer{
+    height: 100px;
+    background-color: rosybrown;
+}
+
+
+/* MOBILE*/
+@media screen and (min-width: 576px) {
+
+    body{
+        width: 100%;
+    }
+
+    header{
+        width: 200px;
+    }
+    
+    main{
+        width: calc(100% - 200px);
+    }
+
+    div.album{
+        width: calc(50vw - 9rem);
+        height: calc(50vw - 9rem);
+    }
+
+    div.artist{
+        width: calc(50vw - 9rem);
+        height: calc(50vw - 9rem);
+    }
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    body{
+        width: 100%;
+    }
+    
+    div.album{
+        width: calc(100vw / 4 - 5rem);
+        height: calc(100vw / 4 - 5rem )
+    }
+
+    div.artist{
+        width: calc(100vw / 4 - 5rem);
+        height: calc(100vw / 4 - 5rem )
+    }
+    
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+
+    body{
+        width: 100%;
+    }
+    
+    div.album{
+        width: calc(100vw / 6 - 3.5rem);
+        height: calc(100vw / 6 - 3.5rem);
+    }
+
+    div.artist{
+        width: calc(100vw / 6 - 3.5rem);
+        height: calc(100vw / 6 - 3.5rem);
+    }
+    
 }
 
 
 
-div.player{
-    width: 100vw;
-    height: 60px;
-    background-color: blueviolet;
-}
+
+
+
