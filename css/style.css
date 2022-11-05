@@ -10,10 +10,6 @@
     display: flex;
 }
 
-.wrap{
-    flex-wrap: wrap;
-}
-
 header{
     width: 60px;
     height: calc(100vh - 100px);
