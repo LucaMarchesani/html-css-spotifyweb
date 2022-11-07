@@ -11,7 +11,7 @@
 }
 
 body{
-    min-width: 500px;
+    min-width: 550px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -19,7 +19,33 @@ header{
     width: 50px;
     height: calc(100vh - 50px);
     background-color: #000000;
+    text-align: center;
 }
+
+div.logo :first-child{
+    padding-top: .5rem;
+    width: 60%;
+}
+
+div.logo :last-child{
+    display: none;
+}
+
+ul.tasks{
+    list-style: none;
+}
+
+.tasks>li i{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #d2d2d2;
+
+}
+
+
+
+
+
 
 main{
     width: calc(100% - 50px);
@@ -27,13 +53,26 @@ main{
 }
 
 div.top-main{
-    height: 50px;
+    height: 65px;
     background-color: #080b12;
+    text-align: end;
+    padding: 1rem .5rem 0;
+}
+
+div.top-main>input{
+    color: #ffffff;
+    background-color: #080b12;
+    padding: .5rem 3rem;
+    border: 1.5px solid #ffffff ;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 div.main-content{
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 65px);
     padding: 1rem;
     background-color: #141922;
     overflow-y: scroll;
@@ -41,13 +80,14 @@ div.main-content{
 
 ul.main-nav{
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 ul.main-nav>li a{
     text-decoration: none;
     text-transform: uppercase;
     color: #73757a;
+    padding: 0 1rem;
 }
 
 ul.nav2{
@@ -88,8 +128,8 @@ div.album>h3{
 }
 
 footer{
-    height: 50px;
-    background-color: #3a3850;
+    height: 65px;
+    background-color: #282828;
 }
 
 
@@ -102,6 +142,16 @@ footer{
 
     header{
         width: 180px;
+    }
+
+    div.logo :first-child{
+        display: none;
+    }
+    
+    div.logo :last-child{
+        display: block;
+        width: 60%;
+        margin: 1rem;
     }
     
     main{
