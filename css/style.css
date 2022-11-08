@@ -15,15 +15,14 @@ body{
     color: #d2d2d2;
 }
 
-li:hover{
-    color: #ffffff;
-}
-
 header{
     width: 50px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 65px);
     background-color: #000000;
     padding: .5rem 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
 }
 
 div.logo{
@@ -42,21 +41,17 @@ ul.tasks{
     list-style: none;
 }
 
-.task>li{
-    vertical-align: middle;
-}
-
 li:hover{
     color: #ffffff;
 }
 
 li>i{
-    margin: 1rem .5rem 0 0;
-    font-size: 1.5rem;
+    margin-right: .5rem;
     color: #d2d2d2;
 }
 
 li>span{
+    font-size: .8rem;
     display: none;
 }
 
@@ -64,9 +59,28 @@ ul.playlist{
     display: none;
 }
 
+ul.bottom-text{
+    list-style: none;
+    font-size: .8rem;
+    color: #d2d2d2;
+}
+
+h3>i{
+    margin-right: .5rem;
+
+}
+
+div.divider{
+    width: 100%;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin: .5rem 0 .8rem;
+
+}
+
 main{
     width: calc(100% - 50px);
-    height: calc(100vh - 50px);
+    height: calc(100vh - 65px);
 }
 
 div.top-main{
@@ -79,7 +93,7 @@ div.top-main{
 div.top-main>input{
     color: #ffffff;
     background-color: #080b12;
-    padding: .5rem 3rem;
+    padding: .5rem 2rem;
     border: 1.5px solid #ffffff ;
     border-radius: 20px;
     text-transform: uppercase;
@@ -110,6 +124,13 @@ ul.main-nav>li{
     text-transform: uppercase;
     color: #73757a;
     margin: 0rem 1rem 1.5rem;
+}
+
+div.green-bar{
+    background-color: #adff2f;
+    margin: auto;
+    width: 50%;
+    height: 2px;
 }
 
 .main-nav>li:hover{
@@ -143,6 +164,14 @@ div.album{
     width: calc(100% / 2 - 1rem);
     margin: .5rem;
     text-align: center;
+}
+
+div.album>h3{
+    font-size: 1rem;
+}
+
+div.album>p{
+    font-size: .8rem;
 }
 
 figure{
@@ -193,6 +222,10 @@ li.mix{
     text-align: center;
 }
 
+.mix>h3{
+    font-size: 1rem;
+}
+
 .popular>ul{
     list-style: none;
 }
@@ -217,6 +250,10 @@ li.artist{
     border-radius: 50%;
 }
 
+.artist>h3{
+    font-size: 1rem;
+}
+
 li:hover{
     color: #ffffff;
 }
@@ -224,6 +261,12 @@ li:hover{
 footer{
     height: 65px;
     background-color: #282828;
+}
+
+div.player>div{
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine;
 }
 
 
@@ -260,7 +303,7 @@ footer{
     }
 
     .playlist>li{
-        line-height: 2rem;
+        line-height: 1.8rem;
     }
     
     main{
