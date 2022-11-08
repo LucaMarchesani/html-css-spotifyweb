@@ -30,7 +30,7 @@ div.logo{
 }
 
 div.logo :first-child{
-    width: 25px;
+    width: 20px;
 }
 
 div.logo :last-child{
@@ -65,17 +65,27 @@ ul.bottom-text{
     color: #d2d2d2;
 }
 
-h3>i{
-    margin-right: .5rem;
-
+.bottom-text li:first-child{
+    margin-left: .4rem;
+    margin-bottom: .5rem;
 }
 
 div.divider{
+    display: none;
     width: 100%;
     height: 1px;
     background-color: #d2d2d2;
     margin: .5rem 0 .8rem;
+}
 
+.user>span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.user>i{
+    font-size: 1.5rem;
+    margin-right: .5rem;
 }
 
 main{
@@ -166,6 +176,11 @@ div.album{
     text-align: center;
 }
 
+figure:hover{
+    opacity: .5;
+}
+
+
 div.album>h3{
     font-size: 1rem;
 }
@@ -185,14 +200,11 @@ figure>i{
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    padding: .5rem;
-    border-radius: 50%;
+
 }
 
 figure>i:hover{
-    opacity: 2;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition-duration: 500ms;
+    opacity: 1;
 }
 
 figure>img{
@@ -264,9 +276,23 @@ footer{
 }
 
 div.player>div{
-    height: 100%;
     width: 50%;
+    height: 65px;
     background-color: aquamarine;
+}
+
+figure.song-playing{
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.song-playing>img{
+    position: absolute;
+    width: 100%;
+    top: .5rem;
+    left: .5rem;
+    
 }
 
 
@@ -304,6 +330,11 @@ div.player>div{
 
     .playlist>li{
         line-height: 1.8rem;
+    }
+
+    div.divider{
+        display: block;
+    
     }
     
     main{
