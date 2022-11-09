@@ -22,7 +22,7 @@ header{
     padding: .5rem 1rem;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 div.logo{
